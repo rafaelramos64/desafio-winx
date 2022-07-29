@@ -13,6 +13,11 @@
         </NuxtLink>
       </v-toolbar-title>
 
+      <v-btn color="primary" @click.prevent="openCreateModal(true)">
+        <v-icon>mdi-plus</v-icon>
+        Adicionar post
+      </v-btn>
+
       <v-spacer></v-spacer>
 
       <v-app-bar-nav-icon color="primary" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
@@ -36,6 +41,7 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex'
 
 export default {
   name: 'NavBar',
@@ -44,6 +50,10 @@ export default {
       drawer: false
     }
   },
+
+  methods: {
+    ...mapActions(['openCreateModal']),
+  }
 }
 </script>
 

@@ -2,7 +2,7 @@
   <v-row justify="center" align="center">
     <v-col>
       <list-posts />
-      <!-- <create-post /> -->
+      <create-post />
     </v-col>
   </v-row>
 </template>
