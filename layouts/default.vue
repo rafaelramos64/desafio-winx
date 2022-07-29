@@ -1,13 +1,14 @@
 <template>
   <v-app>
+    <navbar />
+    
     <v-main>
       <v-container>
         <Nuxt />
       </v-container>
     </v-main>
-   
-    <v-footer :absolute="!fixed" app>
-    </v-footer>
+
+    <footer-bar />
   </v-app>
 </template>
 
