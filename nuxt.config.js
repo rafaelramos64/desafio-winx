@@ -27,6 +27,8 @@ export default {
     dirs: [
       '~/components',
       '~/components/app',
+      '~/components/crud',
+      '~/components/utils',
     ],
   },
 
